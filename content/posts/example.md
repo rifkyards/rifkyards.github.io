@@ -8,7 +8,6 @@ cover:
   relative: false # To use relative path for cover image, used in hugo Page-bundles
 
 date: '2024-12-18T17:59:59+08:00'
-draft: true
 title: 'Example'
 
 ShowToc: true
