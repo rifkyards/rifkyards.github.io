@@ -14,7 +14,7 @@ Saat ini, pengelolaan banyak server secara manual sangat tidak efisien dan memer
 
 # Teori
 ## Apa itu Openstack?
-Openstack adalah platform komputasi awan (cloud computing) open-source yang memungkinkan kita untuk membangun dan mengelola infrastruktur cloud publik maupun private. Bayangkan OpenStack sebagai sistem operasi untuk seluruh pusat data. Dengan OpenStack, kita dapat mengontrol dan mengelola sumber daya komputasi, penyimpanan, dan jaringan melalui antarmuka yang terstandarisasi.
+Openstack adalah platform komputasi awan (cloud computing) open-source yang memungkinkan kita untuk membangun dan mengelola infrastruktur cloud publik maupun private. Bayangkan OpenStack sebagai sistem operasi untuk seluruh pusat data. Dengan OpenStack, kita dapat mengontrol dan mengelola sumber daya komputasi, penyimpanan, dan jaringan melalui antarmuka yang terstandarisasi. OpenStack sendiri memiliki  banyak service, yang memiliki fungsi berbeda-beda. Untuk Informasi lebih lanjut mengenai service OpenStack, bisa baca [disini](https://docs.redhat.com/en/documentation/red_hat_openstack_platform/12/html/architecture_guide/components).
 
 ## Apa itu Ansible?
 Ansible merupakan alat otomatisasi yang digunakan untuk mengelola konfigurasi server dan aplikasi. Dengan Ansible, kita bisa menjalankan perintah pada banyak server sekaligus, tanpa perlu mengaturnya satu per satu. Ansible menggunakan file YAML untuk mendefinisikan tugas-tugas yang harus dilakukan yang disebut dengan playbook.
@@ -23,6 +23,7 @@ Ansible merupakan alat otomatisasi yang digunakan untuk mengelola konfigurasi se
 Openstack-Ansible adalah sebuah proyek yang menggabungkan OpenStack dan Ansible untuk mempermudah instalasi serta manajemen OpenStack secara otomatis. Pengguna dapat menginstal dan mengelola berbagai komponen OpenStack menggunakan Playbook Ansible, yang membuat deployment lebih konsisten dan dapat diskalakan. Dalam implementasinya, OpenStack dapat dijalankan dalam container untuk meningkatkan isolasi dan manajemen sumber daya.
 
 # Tools
+* Ubuntu – Jammy – v22.04
 *	OpenStack – Caracal – v2024.1
 *	OpenStack-Ansible – v2024.1
 *	Python – v3.10.12
@@ -33,7 +34,7 @@ Openstack-Ansible adalah sebuah proyek yang menggabungkan OpenStack dan Ansible 
 ![Network Topology](/media/images/openstack/openstack-ansible/openstack-ansible-network.svg)
 
 ## Logikal
- ![Logical Topology](/media/images/openstack/openstack-ansible/openstack-ansible-logical.svg)
+![Logical Topology](/media/images/openstack/openstack-ansible/openstack-ansible-logical.svg)
 
 # Langkah Implementasi
 ## 1. Konfigurasi Port Bridge
@@ -310,7 +311,7 @@ rabbitmq_erlang_extra_args: "+sbwt none +sbwtdcpu none +sbwtdio none +stbt nnts"
 * Menjalankan skrip yang akan membuat password dari service dan komponen OpenStack.
 ```
 ~# cd /opt/openstack-ansible
-/opt/openstack-ansible# ./scripts/pw-token-gen.py -- file /etc/openstack_deploy/user_secrets.yml
+/opt/openstack-ansible# ./scripts/pw-token-gen.py --file /etc/openstack_deploy/user_secrets.yml
 ```
 
 * Menjalankan playbook agar service dan komponen dari OpenStack terinstall.
@@ -428,3 +429,16 @@ ID=cirros
 HOME_URL="https://cirros-cloud.net"
 BUG_REPORT_URL="https://github.com/cirros-dev/cirros/issues"
 ```
+
+# Referensi
+* Penjelasan mengenai Cloud Computing.
+ 	* https://btech.id/id/news/what-is-cloud-computing/
+* Penjelasan mengenai OpenStack.
+ 	* https://btech.id/en/news/mengenal-openstack-serta-fitur-dan-kelebihannya/
+*	Deploy Openstack menggunakan Openstack-Ansible.
+ 	* https://docs.openstack.org/project-deploy-guide/openstack-ansible/2024.1/
+*	Konfigurasi Openstack-Ansible.
+ 	* https://docs.openstack.org/openstack-ansible/latest/reference/inventory/openstack-user-config-reference.html
+ 	* https://satishdotpatel.github.io/build-openstack-cloud-using-openstack-ansible/
+ 	* https://satishdotpatel.github.io/openstack-ansible-multinode-ovn/
+ 	* https://medium.com/@travistruman/configuring-openstack-ansible-for-open-vswitch-b7e70e26009d

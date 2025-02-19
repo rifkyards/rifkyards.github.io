@@ -28,6 +28,9 @@ languages:
       series: series
     menu:
       main:
+        - name: Blogs
+          url: blogs/
+          weight: 3
         - name: Archive
           url: archives
           weight: 5
