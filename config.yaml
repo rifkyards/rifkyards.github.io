@@ -1,4 +1,4 @@
-baseURL: "https://rifkyards.github.io/"
+baseURL: "https://rifkyards.github.io"
 languageCode: en-us
 paginate: 5
 theme: ["PaperMod"]
@@ -37,50 +37,23 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-
-  id:
-    languageName: ":id:"
-    weight: 2
-    title: PaperModL2
-    taxonomies:
-      category: idcategories
-      tag: idtags
-      series: idseries
-    menu:
-      main:
-        - name: Archive
-          url: archives/
-          weight: 5
-        - name: idTags
-          url: idtags
-          weight: 10
-        - name: idCategories
-          url: idcategories
-          weight: 10
-        - name: idSeries
-          url: idseries
-          weight: 10
-        - name: NullLink
-          url: "#"
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
-      languageAltTitle: id
+      languageAltTitle: en
       profileMode:
         enabled: true
-        title: PaperMod
-        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-        imageTitle: ProfileMode image
+        title: Rifky Ardiansyah
+        imageUrl: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGllOWEA5zH1tlPydsq8bZ7LZE4ijD4gYmobE7UlDbg-LnOpG1Kq0SvRJ6tjmciF4772uZtzJrDzPX1mX6AuXUhIZ3C18auUXkATWb7r_TOBIDO2gar839CFXYz3WA95Q-553uIj6gBgMb/s800/job_it_dokata.png"
+        imageTitle: Image Profile
         # imageWidth: 120
         # imageHeight: 120
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        subtitle: "♾️ DevOps | ☁︎ Tukang Awan | 🌐 Open Source"
         buttons:
           - name: Blog
-            url: posts
-          - name: Profile Mode
-            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+            url: blogs
+          # - name: Profile Mode
+          #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
 
 outputs:
   home:
@@ -91,7 +64,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  author: ["Rifky Ardiansyah"]
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -103,7 +76,7 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
@@ -112,7 +85,7 @@ params:
 
   profileMode:
     enabled: false
-    title: PaperMod
+    title: Rifky Ardiansyah
     imageUrl: "#"
     imageTitle: my image
     # imageWidth: 120
@@ -123,35 +96,38 @@ params:
       - name: Tags
         url: tags
 
-  homeInfoParams:
-    Title: "PaperMod's Demo"
-    Content: >
-      👋 Welcome to demo page of Hugo's theme PaperMod!
+  # homeInfoParams:
+  #   Title: "PaperMod's Demo"
+  #   Content: >
+  #     👋 Welcome to demo page of Hugo's theme PaperMod!
 
-      - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
+  #     - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
 
-      - Feel idee to show your support by giving us a star 🌟 on GitHub and sharing with your idiends and social media .
+  #     - Feel idee to show your support by giving us a star 🌟 on GitHub and sharing with your idiends and social media .
 
-      - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+  #     - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
 
   socialIcons:
+    - name: linkedin
+      title: Connect on Linkedin
+      url: "https://www.linkedin.com/in/rifkyardiansyah/"
     - name: github
-      title: View Source on Github
-      url: "https://github.com/adityatelange/hugo-PaperMod"
-    - name: Discord
-      title: Join discord community
-      url: "https://discord.gg/ahpmTvhVmp"
-    - name: X
-      title: Share PaperMod on X/Twitter
-      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
-    - name: KoFi
-      title: Buy me a Ko-Fi :)
-      url: "https://ko-fi.com/adityatelange"
+      title: View my Github
+      url: "https://github.com/rifkyards"
+  #- name: Discord
+    #   title: Join discord community
+    #   url: "https://discord.gg/ahpmTvhVmp"
+    # - name: X
+    #   title: Share PaperMod on X/Twitter
+    #   url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+    # - name: KoFi
+    #   title: Buy me a Ko-Fi :)
+    #   url: "https://ko-fi.com/adityatelange"
 
-  editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # label:
   # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
