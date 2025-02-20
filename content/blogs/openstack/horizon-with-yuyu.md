@@ -61,7 +61,7 @@ Note : Lakukan langkah dibawah ini di controller node.
 /var/www/html/horizon# pip install -U pip
 /var/www/html/horizon# wget https://opendev.org/openstack/requirements/raw/branch/stable/2024.1/upper-constraints.txt
 
-/var/www/html/horizon# sed -i 's/horizon === \([0-9.]\+\)/horizon === 23.4.0/g' upper-constraints.txt
+/var/www/html/horizon# sed -i 's/horizon===\([0-9.]\+\)/horizon===23.4.0/g' upper-constraints.txt
 
 /var/www/html/horizon# pip install -c upper-constraints.txt .
 /var/www/html/horizon# pip install -r requirements.txt
@@ -124,7 +124,7 @@ pod-controller-memcached-container-46f8dbab      RUNNING 1         onboot, opens
 * Mendownload paket halaman dahsboard untuk service Heat. Lalu menyalin konfigurasi dari paket tersebut ke Horizon. 
 ```
 ~# pip install heat-dashboard==11.0.0
-~# cp -n /usr/local/lib/python3.10/dist-packages/heat_dashboard/enabled/_[1-9]*. py /var/www/html/horizon/openstack_dashboard/enabled/
+~# cp -n /usr/local/lib/python3.10/dist-packages/heat_dashboard/enabled/_[1-9]*.py /var/www/html/horizon/openstack_dashboard/enabled/
 ```
 
 * Menjalankan perintah untuk ntuk mengumpulkan dan memindahkan file statis (seperti CSS, JavaScript, gambar).
@@ -290,7 +290,7 @@ EMAIL_USE_TLS = True
 (env):/var/yuyu# nano script/yuyu_api.service
 
 # Change IP in this line
-ExecStart={{yuyu_dir}}/env/bin/gunicorn yuyu.wsgi --workers 2 --bind 192.168.4.10:8182 -- log-file=logs/gunicorn.log
+ExecStart={{yuyu_dir}}/env/bin/gunicorn yuyu.wsgi --workers 2 --bind 192.168.4.10:8182 --log-file=logs/gunicorn.log
 ```
 ```
 (env):/var/yuyu# nano yuyu/settings.py
@@ -371,7 +371,7 @@ pod-controller-memcached-container-46f8dbab
 
 # Pengujian
 
-* Mencoba akses panel “Admin” > “Billing” > “Billing Overview”. Pastikan data yang ditampilkan sesuai dengan  resource OpenStack yang sudah terpakai.
+* Mencoba akses panel **“Admin” > “Billing” > “Billing Overview”**. Pastikan data yang ditampilkan sesuai dengan  resource OpenStack yang sudah terpakai.
 ![Billing Overview](/media/images/openstack/horizon-with-yuyu/horizon-with-yuyu-overwiew.png)
   
 # Referensi

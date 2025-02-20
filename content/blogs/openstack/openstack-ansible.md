@@ -106,7 +106,7 @@ Compute2 Node   : ~$ sudo hostnamectl set-hostname pod-compute2
 ~# passwd root
 ```
 
-* Membuat SSH Key untuk user root <br>
+* Membuat SSH Key untuk user root. <br>
 Note : Lakukan langkah dibawah ini di controller node.
 ```
 ~# ssh-keygen -t rsa
@@ -280,8 +280,8 @@ neutron_provider_networks:
   network_types: "vxlan"
   network_vxlan_ranges: "1:1000"
 neutron_ml2_drivers_type: "flat, vlan, vxlan"
-neutron_plugin_base :
-- router
+neutron_plugin_base:
+  - router
 neutron_l2_population: True
 neutron_ml2_mechanism_drivers: "openvswitch, l2population"
 neutron_firewall_driver: "iptables_hybrid"
@@ -387,7 +387,7 @@ utility:/# openstack floating ip create --floating-ip-address 20.6.6.200 externa
 utility:/# openstack server add floating ip cirros-instance-rifky 20.6.6.200
 ```
 
-*	Pengujian akses internet dari instance Cirros
+*	Pengujian akses internet dari instance Cirros.
 ```
 $ cat /etc/os-release
 PRETTY_NAME="CirrOS 0.6.2"
