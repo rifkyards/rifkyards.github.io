@@ -274,11 +274,11 @@ openstack_external_ssl: false
 # Neutron Configs
 neutron_plugin_type: "ml2.ovs"
 neutron_provider_networks:
-network_flat_networks: "provider"
-network_mappings: "provider:br-ex"
-network_interface_mappings: "br-ex:ens4"
-network_types: "vxlan"
-network_vxlan_ranges: "1:1000"
+  network_flat_networks: "provider"
+  network_mappings: "provider:br-ex"
+  network_interface_mappings: "br-ex:ens4"
+  network_types: "vxlan"
+  network_vxlan_ranges: "1:1000"
 neutron_ml2_drivers_type: "flat, vlan, vxlan"
 neutron_plugin_base :
 - router
