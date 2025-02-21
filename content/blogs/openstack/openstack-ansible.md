@@ -279,11 +279,11 @@ neutron_provider_networks:
   network_interface_mappings: "br-ex:ens4"
   network_types: "vxlan"
   network_vxlan_ranges: "1:1000"
-neutron_ml2_drivers_type: "flat, vlan, vxlan"
+neutron_ml2_drivers_type: "flat,vlan,vxlan"
 neutron_plugin_base:
   - router
 neutron_l2_population: True
-neutron_ml2_mechanism_drivers: "openvswitch, l2population"
+neutron_ml2_mechanism_drivers: "openvswitch,l2population"
 neutron_firewall_driver: "iptables_hybrid"
 
 # Galera Configs

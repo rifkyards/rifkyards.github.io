@@ -104,7 +104,7 @@ OPENSTACK_KEYSTONE_BACKEND = {
         'can_edit_group': True,
         'can_edit_user': True,
         'can_edit_role': True,
-        'can_edit_project' : True,
+        'can_edit_project': True,
         'can_edit_domain': True,
 }
 
