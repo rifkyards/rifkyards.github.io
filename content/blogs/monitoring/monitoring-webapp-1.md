@@ -1,6 +1,6 @@
 ---
 cover:
-    image: ''
+    image: '/media/images/monitoring/monitoring-webapp-1/header.jpg'
     alt: "Monitoring System"
 date: '2025-03-10T03:13:02Z'
 title: '[PART 1] Automated WebApp Provisioning and Secure Monitoring'
@@ -65,13 +65,13 @@ dilakukan yang disebut dengan playbook.
 *  Telegram   
 
 # Topologi
-![Topologi](/media/images/monitoring/monitoring-webapp-topology.svg)
+![Topologi](/media/images/monitoring/monitoring-webapp-1/monitoring-webapp-topology.svg)
 
 # Alur Kerja
-![Topologi](/media/images/monitoring/monitoring-webapp-workflow.svg)
+![Topologi](/media/images/monitoring/monitoring-webapp-1/monitoring-webapp-workflow.svg)
 
 # Langkah Implementasi
-## 1. Konfigurasi Akses Remote Menggunakan SSH.
+## Konfigurasi Akses Remote Menggunakan SSH.
 Note : Lakukan langkah dibawah ini di semua node.
 * Ubah hostname pada semua node.
 ```
@@ -101,7 +101,7 @@ Client2 Node    : ~$ sudo hostnamectl set-hostname server-client2
 ~$ ssh-copy-id server-client2
 ```
 
-## 2. Instalasi Tools Ansible. 
+## Instalasi Tools Ansible. 
 Note : Lakukan langkah dibawah ini di monitoring node.
 * Melakukan update paket dan instalasi Ansible.
 ```
@@ -130,7 +130,7 @@ ansible [core 2.17.9]
     libyaml = True
 ```
 
-## 3. Instalasi Tools Terraform. 
+## Instalasi Tools Terraform. 
 Note : Lakukan langkah dibawah ini di monitoring node.
 * Melakukan update paket dan instalasi paket yang dibutuhkan. 
 ```
@@ -163,7 +163,7 @@ sudo tee /etc/apt/sources.list.d/hashicorp.list
 ~$ sudo apt-get install terraform
 ```
 
-## 4. Instalasi Node Exporter menggunakan Ansible. 
+## Instalasi Node Exporter menggunakan Ansible. 
 Note : Lakukan langkah dibawah ini di monitoring node.
 * Menambahkan direktori untuk instalasi Node Exporter. 
 ```
@@ -270,7 +270,7 @@ server-client2
 ~/ansible-node-exporter$ ansible-playbook setup-node-exporter.yml
 ```
 
-## 5. Instalasi Docker menggunakan Ansible.
+## Instalasi Docker menggunakan Ansible.
 Note : Lakukan langkah dibawah ini di monitoring node.
 * Membuat direktori untuk instalasi Docker.
 ```
@@ -419,7 +419,7 @@ server-client2
 ```
 ~/ansible-docker$ ansible-playbook setup-docker.yml
 ```
-## 6. Deploy Aplikasi Web Laravel dan Nginx Exporter menggunakan Ansible. 
+## Deploy Aplikasi Web Laravel dan Nginx Exporter menggunakan Ansible. 
 Note : Lakukan langkah dibawah ini di monitoring node.
 * Membuat direktori untuk deploy aplikasi web Laravel dan Nginx Exporter. 
 ```
@@ -832,7 +832,7 @@ WantedBy=default.target
 Vault password: <inputVaultPass>
 ```
 
-## 7. Deploy Aplikasi Web berbasis Container menggunakan Terraform. 
+## Deploy Aplikasi Web berbasis Container menggunakan Terraform. 
 * Membuat direktori untuk aplikasi web berbasis container. 
 ```
 ~$ mkdir terraform-docker-apps
