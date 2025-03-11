@@ -9,7 +9,7 @@ category: ["Monitoring"]
 ShowToc: true
 ---
 
-Blog ini merupakan lanjutan dari part sebelumnya. Bisa cek [disini](https://rifkyards.github.io/blogs/monitoring/monitoring-webapp-1/).
+Blog ini merupakan kelanjutan dari bagian sebelumnya. Jika belum membacanya, bisa cek [disini](https://rifkyards.github.io/blogs/monitoring/monitoring-webapp-1/).
 
 # Langkah Implementasi
 ## Instalasi dan Konfigurasi Tools Prometheus.
