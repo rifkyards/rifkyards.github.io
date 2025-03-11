@@ -786,6 +786,9 @@ XXXXXxXXXXXXXXXXXXXXXXXXXXXX
 * Cek pesan di telegram yang terkirim jika ada resolve status.
 ![Message Resolved](/media/images/monitoring/monitoring-webapp-2/monitoring-webapp-resolved-telegram.png) 
 
+# Kesimpulan
+Otomatisasi pada infrastruktur memungkinkan proses penskalaan menjadi lebih efisien. Bayangkan jika kita memiliki banyak node, konfigurasi manual akan menjadi tantangan besar. Inilah alasan kita menggunakan **Ansible** dan **Terraform** untuk mengelola infrastruktur secara otomatis. Selain itu, untuk memantau penggunaan, status, dan potensi masalah, diperlukan sistem monitoring dan deteksi anomali seperti **Prometheus**, **Grafana**, dan **Alert Manager**.
+
 # Referensi
 * Monitoring Docker dengan cAdvisor.
  	* https://prometheus.io/docs/guides/cadvisor/ 
