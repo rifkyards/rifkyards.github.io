@@ -787,8 +787,6 @@ XXXXXxXXXXXXXXXXXXXXXXXXXXXX
 ![Message Resolved](/media/images/monitoring/monitoring-webapp-2/monitoring-webapp-resolved-telegram.png) 
 
 # Referensi
-
-Referensi
 * Monitoring Docker dengan cAdvisor.
  	* https://prometheus.io/docs/guides/cadvisor/ 
 * Konfigurasi Alert Manager dan Template.
