@@ -353,7 +353,7 @@ utility:/# openstack subnet create --network internal-net-rifky --allocation-poo
 * Menambahkan router pada OpenStack, yang akan menghubungkan jaringan internal dan eksternal. 
 ```
 utility:/# openstack router create router-rifky
-utility:/# openstack router set -- external-gateway external-net-rifky router-rifky
+utility:/# openstack router set --external-gateway external-net-rifky router-rifky
 utility:/# openstack router add subnet router-rifky internal-subnet-rifky
 ```
 
