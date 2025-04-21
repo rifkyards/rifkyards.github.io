@@ -26,7 +26,7 @@ To simplify you and your team's work, we can use GitHub Actions to automate buil
 * GitHub Account – to use GitHub Actions.
 
 # Workflow
-![Workflow](/media/images/aws/integrate-eks-and-github-actions/workflow.png)
+![Workflow](/media/images/aws/integrate-eks-and-github-actions/workflow.svg)
 
 # Steps
 
